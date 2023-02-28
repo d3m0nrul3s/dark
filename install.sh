@@ -19,6 +19,10 @@ fc-cache -fv
 wget https://github.com/barnumbirr/alacritty-debian/releases/download/v0.10.0-rc4-1/alacritty_0.10.0-rc4-1_amd64_bullseye.deb
 sudo dpkg -i alacritty_0.10.0-rc4-1_amd64_bullseye.deb
 sudo apt install -f
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Hack.zip
+mkdir ~/.fonts
+mv Hack.zip ~/.fonts/
+unzip ~/.fonts/Hack.zip
 
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps && mkdir -p build && cd build && meson ..

@@ -20,8 +20,10 @@ fc-cache -fv
 wget https://github.com/barnumbirr/alacritty-debian/releases/download/v0.10.0-rc4-1/alacritty_0.10.0-rc4-1_amd64_bullseye.deb
 sudo dpkg -i alacritty_0.10.0-rc4-1_amd64_bullseye.deb
 sudo apt install -f
+
 mkdir ~/.fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Hack.zip -d ~/.fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Hack.zip
+unzip Hack.zip -d ~/.fonts/
 
 
 

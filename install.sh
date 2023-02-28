@@ -40,6 +40,8 @@ mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/polybar
+mkdir -p ~/.config/terminator
+cp config/terminator/config ~/.config/terminator/
 cp config/polybar/* ~/.config/polybar/
 cp -r config/bin ~/.config/
 cp config/i3/config ~/.config/i3/config

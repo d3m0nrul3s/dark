@@ -12,7 +12,7 @@ floating_modifier $mod
 exec ~/.config/polybar/launch.sh
 
 # start a terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec alacritty
 
 #shutdown
 bindsym $mod+Escape exec shutdown -h now

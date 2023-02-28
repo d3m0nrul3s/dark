@@ -2,6 +2,7 @@
 
 #sudo apt update && sudo apt upgrade -y
 
+apt update
 apt-get install -y arandr flameshot arc-theme feh i3blocks i3status i3 i3-wm lxappearance python3-pip rofi unclutter cargo compton papirus-icon-theme imagemagick
 apt-get install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev autoconf meson
 apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev terminator mpv wget zsh polybar net-tools
@@ -19,10 +20,10 @@ fc-cache -fv
 wget https://github.com/barnumbirr/alacritty-debian/releases/download/v0.10.0-rc4-1/alacritty_0.10.0-rc4-1_amd64_bullseye.deb
 sudo dpkg -i alacritty_0.10.0-rc4-1_amd64_bullseye.deb
 sudo apt install -f
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Hack.zip
 mkdir ~/.fonts
-mv Hack.zip ~/.fonts/
-unzip ~/.fonts/Hack.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Hack.zip -d ~/.fonts
+
+
 
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps && mkdir -p build && cd build && meson ..

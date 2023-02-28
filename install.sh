@@ -4,7 +4,7 @@
 
 apt-get install -y arandr flameshot arc-theme feh i3blocks i3status i3 i3-wm lxappearance python3-pip rofi unclutter cargo compton papirus-icon-theme imagemagick
 apt-get install -y libxcb-shape0-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev autoconf meson
-apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev terminator mpv wget zsh polybar
+apt-get install -y libxcb-render-util0-dev libxcb-shape0-dev libxcb-xfixes0-dev terminator mpv wget zsh polybar net-tools
 
 mkdir -p ~/.local/share/fonts/
 
@@ -34,6 +34,7 @@ mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/polybar
 cp config/polybar/* ~/.config/polybar/
+cp -r config/bin ~/.config/
 cp config/i3/config ~/.config/i3/config
 cp config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
@@ -42,6 +43,9 @@ cp config/rofi/config ~/.config/rofi/config
 cp fehbg ~/.fehbg
 cp config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 cp -r wallpaper ~/.wallpaper
+
+chmod +x ~/.config/bin/*
+chmod +x ~/.config/polybar/launch.sh
 
 wget https://raw.githubusercontent.com/undiabler/nord-rofi-theme/master/nord.rasi
 mv nord.rasi /usr/share/rofi/themes/
